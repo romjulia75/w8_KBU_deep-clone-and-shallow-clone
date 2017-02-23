@@ -17,18 +17,14 @@ namespace deep_clone_vs_shallow_clone
             this._strret = street;
             this._zip = zip;
             this._city = city;
-            
         }
-            
     }
-
-    class Person
+        class Person
     {
         public Address _address;
         public DateTime _dob;
         public double _weight;
-
-
+        
         public Person DClone()
         {
             Person person = (Person) this.MemberwiseClone();
@@ -36,11 +32,7 @@ namespace deep_clone_vs_shallow_clone
             //person._dob = _dob;
             //person._weight = _weight;
             return person;
-
-
         }
-        
-
     }
 
         class Program
@@ -55,8 +47,6 @@ namespace deep_clone_vs_shallow_clone
             Console.WriteLine(p1._address._strret);
             Console.WriteLine(p2._address._strret);
             Console.ReadLine();
-       
-
         }
     }
 }
